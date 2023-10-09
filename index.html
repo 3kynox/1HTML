@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portfolio</title>
+
+        <!-- Core theme CSS (with Bootstrap) -->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+        <!-- Font Awesome icons -->
+        <script src="https://use.fontawesome.com/releases/v6.4.2/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Portfolio</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"  aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="blog/newslist.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <<header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar mb-5" src="img/avatar.png" alt="Avatar de l'auteur du Portfolio" />
+                <h1 class="masthead-heading text-uppercase mb-0">Thierry PROST</h1>
+                
+                <!-- Icon Divider -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <p class="masthead-subheading font-weight-light mb-0">Développeur Web & Programmeur Graphique</p>
+            </div>
+        </header>
+        <!--#include file="components/header.html" -->
+
+        <!-- Portfolio Section-->
+        <section id="portfolio" class="page-section portfolio">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Portfolio Grid Items-->
+                <div class="d-flex justify-content-center">
+                        <h1><i class="fa-solid fa-graduation-cap"></i> Cursus Universitaire</h1>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>Expert en informatique et systèmes d'information - Supinfo, Paris.</p>
+                </div>
+                <hr /><br />
+                <div class="d-flex justify-content-center" style="padding-bottom: 20px;">
+                    <h1><i class="fa-solid fa-book"></i> Experience</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/cabin.png" alt="Image de la plus récente expérience professionnelle de l'auteur" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/cake.png" alt="Image de la seconde plus récente expérience professionnelle de l'auteur" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/game.png" alt="Image de la troisième plus récente expérience professionnelle de l'auteur" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            
+            <!-- Skills Part -->
+            <div class="d-flex justify-content-center" style="padding-bottom: 20px;">
+                <h1><i class="fa fa-gear" aria-hidden="true"></i>
+                    Compétences</h1>
+            </div>
+            
+            <!-- Skills Table -->
+            <div class="container d-flex align-items-center flex-column">
+                <table>
+                    <thead>
+                        <tr class="">
+                            <td>Skill</td>
+                            <td>Level</td>      
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td><span class="percent">95%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:95%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>
+                                <span class="percent">95%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:95%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>
+                                <span class="percent">35%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:35%;"></div>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>
+                                <span class="percent">80%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:80%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>
+                                <span class="percent">30%</span>
+                                <div class="bar two">
+                                    <div class="fill" style="width:30%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>
+                                <span class="percent">95%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:95%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>
+                                <span class="percent">99%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:99%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MySQL</td>
+                            <td>
+                                <span class="percent">95%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:95%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                            <td>
+                                <span class="percent">80%</span>
+                                <div class="bar one">
+                                    <div class="fill" style="width:80%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">A propos</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li>Donec commodo diam in tincidunt porta.</li>
+                    <li>Nullam sed nisl fringilla elit venenatis imperdiet</li>
+                    <li>Aenean nec ligula vel nibh pretium imperdiet sit amet id nisi</li>
+                </ul>
+                <!-- Recent News -->
+                <div class="grid-container col-xs-1 center-block">
+                    <iframe title="Nouvelle sur l'adaptation responsive" class="news-1" src="blog/entry_1.html" scrolling="no" height="800px"></iframe>
+                    <iframe title="Nouvelle sur les bonnes pratiques" class="news-2" src="blog/entry_2.html" scrolling="no" height="800px"></iframe>
+                    <iframe title="Nouvelle sur l'adaptation à des tailles d'écran différentes" class="news-3" src="blog/entry_3.html" scrolling="no" height="800px"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactez-moi</h2>
+
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Entrer votre nom..." data-sb-validations="required" />
+                                <label for="name">Nom complet</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Un nom est requis.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required, email" />
+                                <label for="email">Adresse Email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Un email est requis.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Votre email est invalide.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Téléphone</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Un numéro de téléphone est requis.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Entrer votre message ici..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Un message est requis.</div>
+                            </div>
+                            <!-- Re-contact checkbox -->
+                            <div>
+                                <input type="checkbox" id="recontact" name="recontact" checked />
+                                <label for="scales">J'accepte d'être recontacté ?</label>
+                            </div>
+                            <!-- Submit success message-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Soumission du formulaire réussie !</div>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erreur d'envoi de formulaire !</div>
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Adresse</h4>
+                        <p class="lead mb-0">
+                            Centro Documental Raiano
+                            <br />
+                            6060-182 Idanha-a-Nova, PORTUGAL
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Social</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">A Propos</h4>
+                        <p class="lead mb-0">
+                            Ce Portfolio a été créé par Thierry PROST pour le cours de 1HTML de Supinfo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--#include file="components/footer.html" -->
+
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Portfolio 2023</small></div>
+        </div>
+
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Analyste-Programmeur
+                                    </h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="img/cabin.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <ul class="list-group text-secondary">
+                                        <li class="list-group-item"><span>Lieu</span> Idanha-a-Nova, Portugal</li>
+                                        <li class="list-group-item"><span>Date</span> 01/04/2019, 30/06/2024</li>
+                                        <li class="list-group-item"><span>Association</span> <a href="https://araa.pt" target="_blank">ARAA-PT</a></li>
+                                    </ul>
+                                    <hr />
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Développeur Backend & Unity PHP / JS / C#</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="img/cake.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <ul class="list-group text-secondary">
+                                        <li class="list-group-item"><span>Lieu</span> Genève, Suisse</li>
+                                        <li class="list-group-item"><span>Date</span> 01/10/2016, 31/12/2019</li>
+                                        <li class="list-group-item"><span>Association</span> <a href="https://everdreamsoft.com/" target="_blank">Everdreamsoft</a></li>
+                                    </ul>
+                                    <hr />
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Développeur PHP / JS</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="img/game.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <ul class="list-group text-secondary">
+                                        <li class="list-group-item"><span>Lieu</span> Quarante (région de Béziers, 34)</li>
+                                        <li class="list-group-item"><span>Date</span> 01/07/2015, 30/05/2016</li>
+                                        <li class="list-group-item"><span>Association</span> INFONOVA</li>
+                                    </ul>
+                                    <hr />
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
